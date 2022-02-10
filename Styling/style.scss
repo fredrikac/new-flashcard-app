@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
     padding: 0;
@@ -8,12 +8,12 @@
 
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     background-color: whitesmoke;
 
     header {
-        background-color: white;
+        background-color: rgb(189, 186, 186);
         .nav {
             display: flex;
             flex-direction: column;
@@ -21,26 +21,26 @@ body {
             width: 100%;
             margin: auto;
             padding: 20px 0px;
-            background-color: white;
+
+            h1 {
+                font-size: 2rem;
+            }
 
             button {
                 font-family: inherit;
                 margin: 10px;
             }
+  
         }
     }
 
-    button{
+    button {
         padding: 8px;
         outline: none;
         cursor: pointer;
-        border: 1px solid lightgray;
+        border: 1px solid rgb(207, 207, 207);
         border-radius: 5px;
         background-color: whitesmoke;
-    }
-
-    button:hover {
-        background-color: rgba(0,0,0,0.1);
     }
 
     .container {
@@ -58,17 +58,22 @@ body {
 
             h2 {
                 text-align: center;
+                margin-bottom: 10px;
             }
 
             textarea {
                 width: 100%;
                 border-radius: 5px;
+                padding: 5px;
                 font-family: inherit;
                 border: 1px solid lightgray;
+                margin-bottom: 10px;
             }
 
             button {
                 width: fit-content;
+                font-family: inherit;
+                background-color: rgb(214, 214, 214);
             }
         }
     
@@ -99,20 +104,22 @@ body {
 
         .flashcardbutton {
             position: absolute;
-            top: 40px;
-            right: 10px;
+            top: 50px;
+            right: 20px;
+            font-family: inherit;
+            background-color: rgb(214, 214, 214);
         }
 
         .flashcardquestion {
-            border-top: 1px solid red; 
+            border-top: 1px solid rgb(18, 95, 85); 
             padding: 15px; 
-            margin-top: 30px
+            margin-top: 30px;
         }
 
         .flashcardanswer {
             text-align: center; 
             display: none; 
-            color: red;
+            color: rgb(34, 112, 102);
         }
     }
 }
@@ -148,6 +155,10 @@ body {
                 margin-top: 10px;
                 margin-bottom: 10px;
             }  
+
+            button:hover {
+                background-color: rgba(0,0,0,0.1);
+            }
         }
     }
 }
