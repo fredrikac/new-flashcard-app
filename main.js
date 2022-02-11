@@ -46,7 +46,7 @@ function divMaker(text){
     h2_question.classList.add('flashcardquestion');
     h2_question.innerHTML = `Fråga: <br> ${text.my_question} `;
     showAnswerBtn.classList.add('flashcardbutton');
-    showAnswerBtn.innerHTML = 'Vänd';
+    showAnswerBtn.innerHTML = 'Visa';
 
     h2_answer.classList.add('flashcardanswer');
     h2_answer.innerHTML = `Svar:  <br> ${text.my_answer}`;
@@ -58,8 +58,10 @@ function divMaker(text){
     showAnswerBtn.addEventListener('click', function() {
         if(h2_answer.style.display == 'none'){
             h2_answer.style.display = 'block';
+            showAnswerBtn.innerHTML = 'Dölj';
         }else {
             h2_answer.style.display = 'none'
+            showAnswerBtn.innerHTML = 'Visa';
         }
     });
 
